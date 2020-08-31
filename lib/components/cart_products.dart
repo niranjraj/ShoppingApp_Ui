@@ -107,6 +107,7 @@ class Single_cart_product extends StatelessWidget {
               )
             ],
           ),
+          // adding quantity to the products
           trailing: FittedBox(
             fit: BoxFit.fill,
             child: Column(

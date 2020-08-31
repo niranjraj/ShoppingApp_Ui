@@ -49,6 +49,7 @@ class _HomePageState extends State<HomePage> {
               icon: srchIcon,
               onPressed: () {
                 setState(() {
+                  //=====search icon and seach bar setup========
                   if (this.srchIcon.icon == Icons.search) {
                     this.srchIcon = Icon(Icons.cancel);
                     this.searchBarTxt = TextField(
@@ -80,7 +81,7 @@ class _HomePageState extends State<HomePage> {
       drawer: Drawer(
         child: DrawerList(),
       ),
-      //ListView begins here
+      //====ListView begins here====
       body: Column(
         children: [
           //imageCarousel called
@@ -90,7 +91,7 @@ class _HomePageState extends State<HomePage> {
             child: Container(
                 alignment: Alignment.centerLeft, child: Text('Category')),
           ),
-          //Horizontal List view begins here for categories
+          //====Horizontal List view begins here for categories====
           HorizontalList(),
           Padding(
             padding: const EdgeInsets.all(4.0),

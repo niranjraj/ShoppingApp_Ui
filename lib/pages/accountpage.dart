@@ -25,6 +25,7 @@ class _AccountsState extends State<Accounts> {
     return Scaffold(
       body: ListView(
         children: [
+          // circle avatar for the profile pic
           Container(
             color: Colors.white,
             height: MediaQuery.of(context).copyWith().size.height / 5,
@@ -37,6 +38,7 @@ class _AccountsState extends State<Accounts> {
               ),
             ),
           ),
+          // user information added with textfield
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Column(
@@ -101,6 +103,8 @@ class _AccountsState extends State<Accounts> {
                 SizedBox(
                   height: 50,
                 ),
+
+                //buttons for navigating out of the accountpage
                 SizedBox(
                   width: 200,
                   height: 50,

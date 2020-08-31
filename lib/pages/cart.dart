@@ -19,7 +19,7 @@ class _CartState extends State<Cart> {
               icon: Icon(Icons.search, color: Colors.white), onPressed: () {}),
         ],
       ),
-      body: CartProducts(),
+      body: CartProducts(), //CarProduct component called here
       bottomNavigationBar: Container(
         color: Colors.white,
         child: Row(
